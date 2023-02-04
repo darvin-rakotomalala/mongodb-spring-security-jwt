@@ -1,0 +1,25 @@
+# CF Project
+application.name=@project.artifactId@
+application.description=@project.description@
+build.version=@project.version@
+build.timestamp=@maven.build.timestamp@
+
+modules.logging.logs.folder.path=./logs
+modules.logging.application.name=@project.artifactId@
+
+spring.profiles.active=default
+server.port=8081
+
+spring.main.lazy-initialization=true
+spring.mvc.pathmatch.matching-strategy=ant_path_matcher
+
+spring.data.mongodb.database=poc-mgt-mcs
+spring.data.mongodb.port=27017
+
+pocMcs.app.jwtSecret= pocMcsSecretKey
+pocMcs.app.jwtExpirationMs= 86400000
+
+logging.level.org.springframework.data.mongodb.core.MongoTemplate=DEBUG
+
+spring.mvc.throw-exception-if-no-handler-found=true
+spring.resources.add-mappings=false
