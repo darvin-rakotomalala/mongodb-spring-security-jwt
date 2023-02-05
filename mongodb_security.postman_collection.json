@@ -224,14 +224,15 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "http://localhost:8081/users?username=root",
+					"raw": "http://localhost:8081/users/byUsername?username=root",
 					"protocol": "http",
 					"host": [
 						"localhost"
 					],
 					"port": "8081",
 					"path": [
-						"users"
+						"users",
+						"byUsername"
 					],
 					"query": [
 						{
@@ -256,7 +257,7 @@
 						}
 					]
 				},
-				"method": "GET",
+				"method": "DELETE",
 				"header": [],
 				"url": {
 					"raw": "http://localhost:8081/users/ff175af4-78e7-4bd2-aca2-8bb2d79b098f",

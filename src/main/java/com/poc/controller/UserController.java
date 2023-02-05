@@ -41,7 +41,7 @@ public class UserController {
     }
 
     @Operation(summary = "WS used to get user by username")
-    @GetMapping("/username")
+    @GetMapping("/byUsername")
     @PreAuthorize(PermissionsAndStatusUtils.AUTH_USER)
     public UserResponseDTO getByUsername(@RequestParam(name = "username", required = true) String username) {
         return userRSA.getByUsername(username);
